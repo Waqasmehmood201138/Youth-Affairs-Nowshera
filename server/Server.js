@@ -1,5 +1,6 @@
 const express = require('express');
 const app  =  express();
+const cors = require('cors');
 const mongoose = require('mongoose');
 const userRoutes= require('./routes/userRoute');
 const eventRoutes= require('./routes/eventRoute');
@@ -19,7 +20,7 @@ const connection = mongoose.connection;
 	.on('error', (err) => {
 		console.log('Error: ', err.message);
 	});
-
+    app.use(cors())
     app.use(express.json());
     app.use('/api/user',userRoutes)
     app.use('/events',eventRoutes)
