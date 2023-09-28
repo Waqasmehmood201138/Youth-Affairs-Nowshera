@@ -2,6 +2,7 @@ import React from 'react'
 import HeroImg from '../Assets/hero_img.png'
 import Navbar from '../Navbar/Navbar'
 import '../Hero Section/HeroSection.css'
+import SliderSection from '../Slider Section/SliderSection'
 
 export default function HeroSection() {
     return (
@@ -16,6 +17,7 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
+            <SliderSection/>
         </>
     )
 }
