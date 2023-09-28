@@ -1,7 +1,20 @@
 .hero_bg{
-    background-color: #12842d;
+    background-color: #045517;
     height: 400px;
 }
 .hero_img{
-    margin-top: 53px;
+    margin-top: 23px;
+    width: 540px;
+}
+.custom-head{
+    font-size:36px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (max-width: 767px) {
+    .hero_img{
+        margin-top: 73px;
+        width: 390px;
+    }
 }
