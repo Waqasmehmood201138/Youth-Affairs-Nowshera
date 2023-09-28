@@ -6,13 +6,13 @@ const registerController = async(req,res)=>{
     const { name , email ,password } = req.body;
     try {
                    if(!name || !email || !password) {
-                       throw Error('please fill all the fields')
+                       throw Error('Please fill all the fields')
                    }
 
                 //    password hashing
                   const isExistUser = await User.findOne({email});
                  if(isExistUser){
-                    throw Error('User already exists Please Sign-in');
+                    throw Error('Sorry User already exists');
                  }
 
                 const salt = await bcrypt.genSalt(10);
@@ -44,7 +44,7 @@ const registerController = async(req,res)=>{
                }
                const isExistUser = await User.findOne({ email});
                if(!isExistUser){
-                   throw Error('User not found Please first Sign Up');
+                   throw Error('Sorry! User not found ');
                }
                //comparing password
                const isMatch = await bcrypt.compare(password,isExistUser.password);
