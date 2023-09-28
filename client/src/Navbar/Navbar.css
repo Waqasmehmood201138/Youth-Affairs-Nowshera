@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* .custom_bg{
     background-color: #00401A;
 }
@@ -38,7 +38,9 @@ background-color: #00401A;
 }
 .custom_nav:hover{
     color: white;
-    background-color: darkgreen;
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
 }
 .home_nav{
     margin-left: 280px;

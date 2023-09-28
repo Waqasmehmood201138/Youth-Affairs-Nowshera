@@ -7,14 +7,15 @@ import Img3 from '../Assets/c_3.jpg'
 export default function SliderSection() {
     return (
         <>
-            <div className="container-fluid mt-3">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6">
-                            <p>The Skills Development Programme serves as a fundamental initiative under the Prime Minister's Youth Programme (PMYP), dedicated to nurturing a skilled workforce that propels economic growth. Its primary objective is to empower the youth of Pakistan with cutting-edge, demand-driven, and employable skills. With a diverse array of over 100 highly sought-after skills on offer, including artificial intelligence, mechatronics, programming, graphic designing, data analytics, e-commerce, cyber security, culinary arts, PLC, CNC Machining, welding, and electric technology.</p>
-                            <p>The implementation of this extensive initiative is overseen by the esteemed National Vocational & Technical Training Commission (NAVTTC), in collaboration with 600 distinguished training providers, including prestigious universities, TVET institutes, and reputable companies. The programme functions with clear and defined focus areas, with a primary emphasis on providing technical skills that align with the dynamic needs of the market. Furthermore, a key aspect of the Skills Development Programme lies in promoting inclusivity, diligently striving for gender equality, inclusiveness of differently abled young individuals, marginalized youth, and empowering youth workers engaged in the informal sector. The programme places a strong emphasis on fostering competence among its trainees, ensuring that they are equipped to excel in their chosen fields.</p>
+            <div className="container-fluid mt-5">
+                <div className="container pt-lg-5   ">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-lg-6 col-md-7 col-11 order-lg-1 order-2">
+                            <h1 className='text-center text-success fw-bold mt-lg-0 mt-3 '>Our Missions!</h1>
+                            <p className='text-center'>The Skills Development Programme serves as a fundamental initiative under the Prime Minister's Youth Programme (PMYP), dedicated to nurturing a skilled workforce that propels economic growth. Its primary objective is to empower the youth of Pakistan with cutting-edge, demand-driven, and employable skills. With a diverse array of over 100 highly sought-after skills on offer, including artificial intelligence, mechatronics, programming, graphic designing, data analytics, e-commerce, cyber security, culinary arts, PLC, CNC Machining, welding, and electric technology.</p>
+                            {/* <p>The implementation of this extensive initiative is overseen by the esteemed National Vocational & Technical Training Commission (NAVTTC), in collaboration with 600 distinguished training providers, including prestigious universities, TVET institutes, and reputable companies. The programme functions with clear and defined focus areas, with a primary emphasis on providing technical skills that align with the dynamic needs of the market. Furthermore, a key aspect of the Skills Development Programme lies in promoting inclusivity, diligently striving for gender equality, inclusiveness of differently abled young individuals, marginalized youth, and empowering youth workers engaged in the informal sector. The programme places a strong emphasis on fostering competence among its trainees, ensuring that they are equipped to excel in their chosen fields.</p> */}
                         </div>
-                        <div className="col-5 ms-5">
+                        <div className="col-lg-5 col-11 ms-5">
                             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner rounded">
                                     <div className="carousel-item active" data-bs-interval="3000">
