@@ -21,8 +21,8 @@ export default function SliderSection() {
                         </div>
                         <div className="col-lg-5 col-11 ms-12 order-lg-2 ">
                             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-                                <div className="carousel-inner rounded">
-                                    <div className="carousel-item active" data-bs-interval="3000">
+                                <div className="carousel-inner rounded border border-warning border-5">
+                                    <div className="carousel-item active" data-bs-interval="1000">
                                         <img src={Img1} className="d-block w-100 custom_slider_img" alt="..." />
                                     </div>
                                     <div className="carousel-item" data-bs-interval="2000">

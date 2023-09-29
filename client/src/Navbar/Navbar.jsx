@@ -16,7 +16,7 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item text-dark">
-                                <Link class="nav-link active custom_nav" aria-current="page" to="/">Home</Link>
+                                <Link class="nav-link custom_nav" aria-current="page" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link ps-4 pe-4 custom_nav" aria-current="page" to="/">Events</Link>
