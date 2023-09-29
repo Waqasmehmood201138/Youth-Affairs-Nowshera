@@ -13,8 +13,8 @@
 }
 
 @media (max-width: 767px) {
+
     .hero_img{
-        margin-top: 73px;
-        width: 390px;
+        display: none;
     }
 }

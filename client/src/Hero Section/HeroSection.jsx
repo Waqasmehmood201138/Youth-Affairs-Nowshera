@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import '../Hero Section/HeroSection.css'
 import SliderSection from '../Slider Section/SliderSection'
+import CounterSection from '../Counter Section/CounterSection'
 
 export default function HeroSection() {
     return (
@@ -21,13 +22,14 @@ export default function HeroSection() {
                         </div>
                         <div className="col-5 text-center">
                             {/* <img className='hero_img' src={HeroImg} alt="" /> */}
-                            <img className='hero_img ' src='https://usagif.com/wp-content/uploads/gifs/pakistan-flag-2.gif' alt="" />
+                            <img className='hero_img' src='https://usagif.com/wp-content/uploads/gifs/pakistan-flag-2.gif' alt="" />
 
                         </div>
                     </div>
                 </div>
             </div>
             <SliderSection />
+            <CounterSection/>
         </>
     )
 }
