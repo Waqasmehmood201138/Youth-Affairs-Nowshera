@@ -18,12 +18,12 @@ export default function CounterSection() {
 
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning ">
+                    <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning">
 
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={0} end={300} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={30} end={512} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
@@ -36,7 +36,7 @@ export default function CounterSection() {
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={0} end={212} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={12} end={112} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
@@ -48,24 +48,24 @@ export default function CounterSection() {
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={0} end={124} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={5} end={124} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
 
-                        <h2 className='text-center text-white fw-bold'>Students</h2>
+                        <h2 className='text-center text-white fw-bold'>Talent Fest</h2>
                     </div>
                     <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning">
 
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={0} end={525} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={13} end={96} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
 
-                        <h2 className='text-center text-white fw-bold'>Students</h2>
+                        <h2 className='text-center text-white fw-bold'>Event Organized</h2>
                     </div>
                 </div>
             </div>
