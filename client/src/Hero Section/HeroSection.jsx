@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { BsFacebook } from 'react-icons/bs'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsInstagram } from 'react-icons/bs'
@@ -24,7 +25,7 @@ export default function HeroSection() {
                                 providing the best services to our customers.
                             </p>
                             <h3 className='text-white ms-3'>
-                                <span className='me-4'><BsFacebook /></span>
+                              <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-white'><BsFacebook /></Link></span>
                                <span className='me-4'><RiTwitterXFill /></span> 
                                <span className='me-4'><BsInstagram /></span> 
                                <span className=''><BsYoutube /></span> 

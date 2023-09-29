@@ -1,3 +1,16 @@
-.custom_counter_container{
+.custom_counter_container {
     font-family: "Poppins";
+}
+
+
+
+@media(min-width: 767px) {
+    .custom_counter_head {
+        margin-left: 170px;
+    }
+}
+@media(max-width: 767px) {
+    .custom_counter_head {
+        text-align: center;
+    }
 }

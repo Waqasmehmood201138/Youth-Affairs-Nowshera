@@ -10,13 +10,13 @@ export default function CounterSection() {
 
             <div className="container mt-4 custom_counter_container">
                 <div className="row">
-                    <div className="col-12 text-center">
-                        <h1 className=' fw-bold'>Our Achievements</h1>
+                    <div className="col-12">
+                        <h1 className=' fw-bold text-success custom_counter_head'>Our Achievements</h1>
                     </div>
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container-fluid mt-2">
                 <div className="row">
                     <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning">
 
