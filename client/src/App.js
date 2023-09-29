@@ -7,7 +7,11 @@ import LoginForm from './Forms/LoginForm';
 import SignupForm from './Forms/SignupForm';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import EventsPage from './Events Page/EventsPage';
+
 import AdminEventForm from './Forms/AdminEventForm';
+
 function App() {
   return (
     <>
@@ -18,7 +22,11 @@ function App() {
          <Route path='/' element={<HeroSection/>} />
          <Route path='/login' element={<LoginForm/>} />
          <Route path='/signup' element={<SignupForm/>} />
+
+         <Route path='/events' element={<EventsPage/>} />
+
          <Route path='/add-event' element={<AdminEventForm/>} />
+
 
 
 </Routes>
