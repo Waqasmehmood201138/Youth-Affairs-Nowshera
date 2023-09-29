@@ -6,7 +6,7 @@ const eventShema = mongoose.Schema({
     },
     categories:{
         type:String,
-        required:true
+    
     }
     ,
     description:{
@@ -14,7 +14,7 @@ const eventShema = mongoose.Schema({
     },
     image:{
         type:String,
-        required:true
+        
     }
 } , {timestamps:true}
 )
