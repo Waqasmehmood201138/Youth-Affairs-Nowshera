@@ -1,18 +1,20 @@
 const Event  = require('../models/eventModel')
 const addEventController = async (req,res)=>{
+    try {
         const { title, description , categories } = req.body;
-   try {
-    
+        const image = req.file.filename;
         
-    if(!title || !categories){
-        throw new Error("Please Select a specific category or inset Title");
-    }
-
+        
+    // if(!title || !categories){
+    //     throw new Error("Please Select a specific category or inset Title");
+    // }
+    
+    
     const newEvent  = await new Event({
         title,
         description,
         categories,
-        image:req.file.filename
+        image
     })
     await newEvent.save();
 
