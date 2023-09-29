@@ -28,9 +28,14 @@ function App() {
 
           <Route path='/events' element={<EventsPage />} />
 
+
           <Route path='/add-event' element={<AdminEventForm />} />
           <Route path='/sep' element={<EventSpecificPage />} />
           <Route path='/admin-dashboard' element={<AdminEventTablePage />} />
+
+         <Route path='/add-event' element={<AdminEventForm/>} />
+         <Route path='/sep/:id' element={<EventSpecificPage/>} />
+
 
 
         </Routes>

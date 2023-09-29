@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { addEventController ,getAllEventsController , deleteEventController , updateEventController } = require('../controllers/eventController')
+const { addEventController ,getAllEventsController ,getSingleEventsController, deleteEventController , updateEventController } = require('../controllers/eventController')
 const multer =require("multer")
 const  path  = require("path")
 
@@ -19,6 +19,7 @@ const upload = multer({
 
 router.post('/add-event', upload.single("image") ,  addEventController);
 router.get('/all-events',  getAllEventsController );
+router.get('/single-event/:id',  getSingleEventsController );
 router.delete('/delete-event/:id',  deleteEventController );
 router.put('/update-event/:id',  upload.single("image")  , updateEventController );
 
