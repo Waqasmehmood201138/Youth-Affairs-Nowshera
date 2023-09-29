@@ -15,6 +15,10 @@ const eventShema = mongoose.Schema({
     image:{
         type:String,
         
+    },
+    time:{
+        type:String,
+        
     }
 } , {timestamps:true}
 )
