@@ -1,7 +1,8 @@
 const Event  = require('../models/eventModel')
+
 const addEventController = async (req,res)=>{
     try {
-        const { title, description , categories } = req.body;
+        const { title, description , categories ,time } = req.body;
         const image = req.file.filename;
         
         
@@ -14,6 +15,7 @@ const addEventController = async (req,res)=>{
         title,
         description,
         categories,
+        time,
         image
     })
     await newEvent.save();
