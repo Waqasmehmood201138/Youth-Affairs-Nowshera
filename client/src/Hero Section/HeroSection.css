@@ -6,7 +6,7 @@
     margin-top: 23px;
     width: 540px;
 }
-.custom-head{
+.custom_hero_title{
     font-size:36px;
     font-weight: 700;
     font-style: normal;
@@ -16,5 +16,9 @@
 
     .hero_img{
         display: none;
+    }
+    .custom_hero_title{
+        font-size: 35px;
+        margin-top: 40px;
     }
 }

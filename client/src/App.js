@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import EventsPage from './Events Page/EventsPage';
 
 import AdminEventForm from './Forms/AdminEventForm';
+import EventSpecificPage from './Event Specific Page/EventSpecificPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
          <Route path='/events' element={<EventsPage/>} />
 
          <Route path='/add-event' element={<AdminEventForm/>} />
+         <Route path='/sep' element={<EventSpecificPage/>} />
 
 
 
