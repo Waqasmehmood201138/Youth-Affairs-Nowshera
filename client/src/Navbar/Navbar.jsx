@@ -40,7 +40,7 @@ export default function Navbar() {
                         <div className="col-1"><Link className='d-flex justify-content-center align-items-center'><img className='mt-1' src={logo} width="40" height="40" alt="" style={{ borderRadius: "50%" }} /></Link></div>
 
                         <div className="col-1 custom_nav home_nav"><Link to="/" className='nav-link'>Home</Link></div>
-                        <div className="col-1 custom_nav"><Link to="/" className='nav-link'>Events</Link></div>
+                        <div className="col-1 custom_nav"><Link to="/events" className='nav-link'>Events</Link></div>
                         <div className="col-2 custom_nav"><Link to="/" className='nav-link'>Contact Us</Link></div>
 
                         <div className="col-1 custom_nav buttons"><Link to="/login" className='nav-link custom_button'>Login</Link></div>

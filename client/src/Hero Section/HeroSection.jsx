@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from '../Assets/hero_img.png'
+// import HeroImg from '../Assets/hero_img.png'
 import Navbar from '../Navbar/Navbar'
 import '../Hero Section/HeroSection.css'
 import SliderSection from '../Slider Section/SliderSection'
