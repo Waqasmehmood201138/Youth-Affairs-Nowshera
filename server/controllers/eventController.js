@@ -42,6 +42,22 @@ const getAllEventsController  = async (req,res)=>{
     }
 }
 
+const getSingleEventsController = async(req,res)=>{
+        try {
+            const eventId = req.params.id;
+               console.log(eventId);
+            const event = await Event.findById(eventId);
+            console.log(event)
+            if(!event){
+                throw new Error("Event not found!")
+            }
+            return res.status(200).json(event);
+        } catch (error) {
+              return res.status(400).json({message:error.message})
+        }
+
+}
+
 const deleteEventController = async (req,res)=>{
     try {
         const deleteEvent = await Event.findByIdAndDelete({_id:req.params.id})
@@ -71,4 +87,4 @@ const updateEventController = async (req,res)=>{
         return res.status(400).json({error:error.message});
     }
 }
-module.exports = {addEventController , getAllEventsController , deleteEventController , updateEventController }
+module.exports = {addEventController , getAllEventsController ,getSingleEventsController, deleteEventController , updateEventController }

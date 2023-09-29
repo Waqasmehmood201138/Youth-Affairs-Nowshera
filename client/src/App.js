@@ -27,7 +27,7 @@ function App() {
          <Route path='/events' element={<EventsPage/>} />
 
          <Route path='/add-event' element={<AdminEventForm/>} />
-         <Route path='/sep' element={<EventSpecificPage/>} />
+         <Route path='/sep/:id' element={<EventSpecificPage/>} />
 
 
 

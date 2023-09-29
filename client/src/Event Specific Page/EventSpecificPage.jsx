@@ -1,8 +1,25 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import img1 from '../Assets/c_7.jpg'
 import Navbar from '../Navbar/Navbar'
-
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 export default function EventSpecificPage() {
+    const { id } = useParams();
+    const [event, setEvent] = useState([])
+    const getAllEvents = async () => {
+        try {
+            console.log(id)
+            const Event = await axios.get(`http://localhost:5000/events/single-event/${id}`);
+             console.log(event)
+            setEvent(Event.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    useEffect(() => {
+        getAllEvents();
+    }, []);
     return (
         <>
         <Navbar/>
@@ -10,13 +27,12 @@ export default function EventSpecificPage() {
             <div className="container  pt-4">
                 <div className="row">
                     <div className="col-6">
-                        <img src={img1} width="550" alt="" />
+                        <img src={`http://localhost:5000/images/${event.image}`} width="550" alt="" />
                     </div>
                     <div className="col-6">
-                        <h2 className='border-start border-success border-4 p-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi unde cupiditate esse!</h2>
-                        <p className='muted-text'>Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quidem aperiam qui voluptatem? Nulla consectetur nihil velit magnam repudiandae blanditiis ab earum recusandae deleniti!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quidem aperiam qui voluptatem? Nulla consectetur nihil velit magnam repudiandae blanditiis ab earum recusandae deleniti!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quidem aperiam qui voluptatem? Nulla consectetur nihil velit magnam repudiandae blanditiis ab earum recusandae deleniti!
-                        </p>
+                        <h2 className='border-start border-success border-4 p-2'>{event.title}</h2>
+                        <p className='muted-text'>{event.description}</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
