@@ -51,7 +51,7 @@ export default function EventsPage() {
                                             <h1 class="card__header word-wrap">{event.title.slice(0, 30)}...</h1>
                                             <p class="card__text ">{event.description.slice(0, 80)}...</p>
                                             
-                                            <button class="card__btn">Explore <span>&rarr;</span></button>
+                                            <button class="card__btn"><Link to={`/sep/${event._id}`} style={{textDecoration:'none'}}>Explore</Link> <span>&rarr;</span></button>
                                         </div>
                                     </div>
                                 </div>
