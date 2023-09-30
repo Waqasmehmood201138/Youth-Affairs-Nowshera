@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeroSection from './Hero Section/HeroSection';
 import LoginForm from './Forms/LoginForm';
 import SignupForm from './Forms/SignupForm';
+import EditForm from './Forms/EditForm';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,6 +36,7 @@ function App() {
 
          <Route path='/add-event' element={<AdminEventForm/>} />
          <Route path='/sep/:id' element={<EventSpecificPage/>} />
+         <Route path='/test' element={<EditForm/>} />
 
 
 
