@@ -71,12 +71,14 @@ const deleteEventController = async (req,res)=>{
 }
 
 const updateEventController = async (req,res)=>{
+
     try {
         const updatedEventData = {
             title: req.body.title,
             description: req.body.description,
             categories: req.body.categories,
-            image:req.file.filename
+            time: req.body.time,
+        
           };
          const updateEvent = await Event.findByIdAndUpdate({_id:req.params.id},updatedEventData,{new:true})
         if(!updateEvent){

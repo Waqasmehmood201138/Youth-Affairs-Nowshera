@@ -21,6 +21,6 @@ router.post('/add-event', upload.single("image") ,  addEventController);
 router.get('/all-events',  getAllEventsController );
 router.get('/single-event/:id',  getSingleEventsController );
 router.delete('/delete-event/:id',  deleteEventController );
-router.put('/update-event/:id',  upload.single("image")  , updateEventController );
+router.post('/update-event/:id',  upload.single("image")  , updateEventController );
 
 module.exports = router;
