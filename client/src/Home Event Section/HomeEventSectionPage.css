@@ -1,0 +1,104 @@
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+.grid__item__home{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+ /* .grid__item__home:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  } */
+  .card__img__home{
+    display: block;
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  /* HomeEventSectionPage.css */
+
+/* Style for the image container */
+.card__home {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Style for the image */
+  .card__img__home {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style for the hover overlay */
+  .card__home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
+    z-index: 1;
+    transition: height 0.6s ease;
+  }
+  
+  /* Style for the hover effect */
+  .card__home:hover .card__img__home {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+  }
+  
+  /* Style for expanding the overlay on hover */
+  .card__home:hover::before {
+    height: 100%;
+  }
+  
+/* Style for the hover overlay */
+.card__home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
+    z-index: 1;
+    transition: height 0.6s ease;
+  }
+  
+  /* Style for the overlay text */
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    z-index: 2; /* Place text above the overlay */
+    opacity: 0; /* Hide the text by default */
+    transition: opacity 0.3s ease;
+    font-family: "Poppins";
+  }
+  .card__home:hover::before {
+    opacity: 1;
+  }
+  
+  .card__home:hover .overlay-text {
+    opacity: 1;
+  }
+
+  
+ 

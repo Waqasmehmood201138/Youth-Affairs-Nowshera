@@ -5,6 +5,7 @@ import '../Event Specific Page/EventSpecifcPage.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import FooterPage from '../Footer Page/FooterPage';
+import Loader from '../Loader/Loader';
 export default function EventSpecificPage() {
     const { id } = useParams();
     const [event, setEvent] = useState([])
@@ -25,6 +26,7 @@ export default function EventSpecificPage() {
     return (
         <>
         <Navbar/>
+        {(event.length === 0) ? (<Loader/>):(
         <div className="container-fluid bg-light vh-100">
             <div className="container pt-4">
                 <div className="row mt-4">
@@ -38,8 +40,9 @@ export default function EventSpecificPage() {
                     </div>
                 </div>
             </div>
-            </div>
-            <FooterPage/>
+            </div>)}
+            {event.length === 0 ? " " : (<FooterPage />)}
+            
         </>
     )
 }

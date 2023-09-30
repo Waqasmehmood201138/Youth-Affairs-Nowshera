@@ -11,6 +11,9 @@
     font-weight: 700;
     font-style: normal;
 }
+.icon:hover{
+    color: yellow;
+}
 
 @media (max-width: 767px) {
 
