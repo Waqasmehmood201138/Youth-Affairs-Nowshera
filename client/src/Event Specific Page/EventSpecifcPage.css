@@ -1,0 +1,38 @@
+
+
+.custom_sep_head{
+    font-family: "Poppins" , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #6b8c64;
+    transition: all 0.2s ease-in-out;
+}
+.custom_sep_head:hover{
+    color: #0099e6;
+}
+.custom_sep_desc{
+    font-family: "Poppins" , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+@media (max-width : 767px){
+    .custom_sep_img_div{
+        display: flex;
+        justify-content: center;
+
+    }
+    .custom_sep_img{
+
+        width: 350px;
+
+    }
+    .custom_sep_details{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,25 @@
+.custom_contact{
+    min-height: 75vh; /* Minimum viewport height */
+    display: flex;
+    flex-direction: column;
+}
+/* Form Styling */
+.custom-contact-input{
+    border: 2px solid black !important;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    padding: 13px;
+}
+.contact_head{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+    line-height: 40px;
+}
+.contact_address{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
