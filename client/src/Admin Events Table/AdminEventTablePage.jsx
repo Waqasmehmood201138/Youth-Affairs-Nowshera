@@ -1,10 +1,58 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react'
 import {AiFillEdit} from 'react-icons/ai'
 import {RiDeleteBin6Fill} from 'react-icons/ri'
 import Navbar from '../Navbar/Navbar'
-import { Link } from 'react-router-dom'
-
+import { Link  , useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import axios from 'axios'
 export default function AdminEventTablePage() {
+    const [title , setTitle] = useState([])
+    const [id , setId] = useState()
+    const handleDelete = async(id) => {
+        const response = await axios.delete(`http://localhost:5000/events/delete-event/${id}`)
+        console.log(response)
+        if(response.status === 200){
+            toast.success('Event deleted successfully')
+            const indexToDelete = title.findIndex(event => event.id === id);
+
+            // If the event is found, remove it from the title state
+            if (indexToDelete !== -1) {
+              const updatedTitle = [...title];
+              updatedTitle.splice(indexToDelete, 1);
+              setTitle(updatedTitle);
+            }
+        }
+        
+        else{
+            toast.error('item already deleted')
+        }
+    }
+    const navigate = useNavigate()
+         console.log('hi')
+         const getTitleData = async () =>{
+ 
+            try {
+                           const response = await fetch('http://localhost:5000/events/all-events/');
+                           const data = await response.json();
+        
+                           setTitle(data);
+            
+            } catch (error) {
+                console.log(error);
+            }
+         }
+            useEffect(()=>{
+                getTitleData();
+            },[])
+
+            const handleEdit = (element) => {
+
+                navigate('/test', {
+
+                    state : element
+                })
+
+            }
     return (
         <>
             <Navbar />
@@ -25,37 +73,27 @@ export default function AdminEventTablePage() {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className='mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, expedita?</td>
-                                    <td><span class="badge text-bg-success mt-2">coming soon</span></td>
+                            {title.map((element)=>{
+                                return(
+                                    <tr>
+                                    <td className='mt-2'>{element.title}</td>
+                                    <td><span class="badge text-bg-success mt-2">{element.categories}</span></td>
                                     <td>
-                                        <Link to="/" className='btn  fs-6'><AiFillEdit/></Link>
-                                        <Link to="/" className='btn  ms-1'><RiDeleteBin6Fill/></Link>
+                                        <button onClick={e => handleEdit(element)}className='btn  fs-6'><AiFillEdit/></button>
+                                        <Link  className='btn  ms-1'  onClick={e=> handleDelete(element._id)}><RiDeleteBin6Fill/></Link>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td className='mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, expedita?</td>
-                                    <td><span class="badge text-bg-info mt-2">open</span></td>
-                                    <td>
-                                        <Link to="/" className='btn  fs-6'><AiFillEdit/></Link>
-                                        <Link to="/" className='btn  ms-1'><RiDeleteBin6Fill/></Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className='mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, expedita?</td>
-                                    <td><span class="badge text-bg-success mt-2">coming soon</span></td>
-                                    <td>
-                                        <Link to="/" className='btn  fs-6'><AiFillEdit/></Link>
-                                        <Link to="/" className='btn  ms-1'><RiDeleteBin6Fill/></Link>
-                                    </td>
-                                </tr>
-
+                                )
+                            })}
+                            
 
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+
+        
         </>
     )
 }
