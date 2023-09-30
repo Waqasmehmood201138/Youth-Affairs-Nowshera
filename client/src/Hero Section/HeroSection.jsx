@@ -4,11 +4,11 @@ import { BsFacebook } from 'react-icons/bs'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsInstagram } from 'react-icons/bs'
 import { BsYoutube } from 'react-icons/bs'
-// import HeroImg from '../Assets/hero_img.png'
 import Navbar from '../Navbar/Navbar'
 import '../Hero Section/HeroSection.css'
 import SliderSection from '../Slider Section/SliderSection'
 import CounterSection from '../Counter Section/CounterSection'
+import FooterPage from '../Footer Page/FooterPage'
 
 export default function HeroSection() {
     return (
@@ -42,6 +42,7 @@ export default function HeroSection() {
             </div>
             <SliderSection />
             <CounterSection />
+            <FooterPage/>
         </>
     )
 }
