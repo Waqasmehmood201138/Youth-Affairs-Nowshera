@@ -11,7 +11,7 @@ export default function CounterSection() {
             <div className="container mt-4 custom_counter_container">
                 <div className="row">
                     <div className="col-12">
-                        <h1 className=' fw-bold text-success custom_counter_head'>Our Achievements</h1>
+                        <h1 className=' fw-bold text-success text-center'>Our Achievements</h1>
                     </div>
                 </div>
             </div>

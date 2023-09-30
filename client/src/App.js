@@ -23,22 +23,22 @@ function App() {
       <BrowserRouter>
         <ToastContainer />
         <Routes>
-          
-            <Route path='/' element={<HeroSection />} />
-            <Route path='/login' element={<LoginForm />} />
-            <Route path='/signup' element={<SignupForm />} />
 
-            <Route path='/events' element={<EventsPage />} />
+          <Route path='/' element={<HeroSection />} />
+          <Route path='/login' element={<LoginForm />} />
+          <Route path='/signup' element={<SignupForm />} />
+
+          <Route path='/events' element={<EventsPage />} />
 
           <Route path='/add-event' element={<AdminEventForm />} />
           <Route path='/sep' element={<EventSpecificPage />} />
           <Route path='/admin-dashboard' element={<AdminEventTablePage />} />
 
-         <Route path='/sep/:id' element={<EventSpecificPage/>} />
-         <Route path='/test' element={<EditForm/>} />
+          <Route path='/sep/:id' element={<EventSpecificPage />} />
+          <Route path='/test' element={<EditForm />} />
 
-            <Route path='/contact-us' element={<ContactUsPage />} />
-      
+          <Route path='/contact-us' element={<ContactUsPage />} />
+
 
 
         </Routes>

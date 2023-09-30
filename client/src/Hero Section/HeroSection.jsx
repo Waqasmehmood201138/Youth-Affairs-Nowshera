@@ -9,6 +9,8 @@ import '../Hero Section/HeroSection.css'
 import SliderSection from '../Slider Section/SliderSection'
 import CounterSection from '../Counter Section/CounterSection'
 import FooterPage from '../Footer Page/FooterPage'
+import HomeEventSectionPage from '../Home Event Section/HomeEventSectionPage'
+import Loader from '../Loader/Loader'
 
 export default function HeroSection() {
     return (
@@ -25,10 +27,10 @@ export default function HeroSection() {
                                 providing the best services to our customers.
                             </p>
                             <h3 className='text-white ms-3'>
-                              <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-white'><BsFacebook /></Link></span>
-                               <span className='me-4'><RiTwitterXFill /></span> 
-                               <span className='me-4'><BsInstagram /></span> 
-                               <span className=''><BsYoutube /></span> 
+                              <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-white'><BsFacebook className='icon'/></Link></span>
+                               <span className='me-4 icon'><RiTwitterXFill /></span> 
+                               <span className='me-4 icon'><BsInstagram /></span> 
+                               <span className='icon'><BsYoutube /></span> 
                             </h3>
 
                         </div>
@@ -42,7 +44,10 @@ export default function HeroSection() {
             </div>
             <SliderSection />
             <CounterSection />
+            <HomeEventSectionPage/>
+            {/* <Loader/> */}
             <FooterPage/>
+
         </>
     )
 }
