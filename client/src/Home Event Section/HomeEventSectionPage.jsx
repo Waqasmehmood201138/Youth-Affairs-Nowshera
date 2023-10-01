@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import img1 from '../Assets/c_9.jpg'
 import img2 from '../Assets/c_7.jpg'
 import img3 from '../Assets/c_2.jpg'
+import img4 from '../Assets/event_1.jpg'
 import '../Home Event Section/HomeEventSectionPage.css'
 
 export default function HomeEventSectionPage() {
@@ -40,7 +41,7 @@ export default function HomeEventSectionPage() {
                     </div>
                     <div className="col-lg-4 col-12 mb-2">
                         <div class="grid__item__home">
-                            <div class="card__home"><img class="card__img__home" src={img2}
+                            <div class="card__home"><img class="card__img__home" src={img4}
                                 alt="img here..." />
                                 <div className="overlay">
                                     <div className="overlay-text"><Link to="/" className='btn btn-success p-2'>See Details</Link></div>
