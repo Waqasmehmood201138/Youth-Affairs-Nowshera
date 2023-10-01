@@ -55,7 +55,7 @@ export default function HomeEventSectionPage() {
             <div className="container mt-4">
                 <div className="row d-flex justify-content-center " >
                     <div className="col-lg-3 col-10 text-center">
-                        <button class="card__btn bg-success text-white mb-5 p-2 "><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
+                        <button class="card__btn bg-success text-white  p-2 "><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
                     </div>
                 </div>
             </div>
