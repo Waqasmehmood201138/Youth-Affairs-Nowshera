@@ -39,7 +39,7 @@
   /* Style for the image */
   .card__img__home {
     width: 100%;
-    height: auto;
+    height: 16rem;
     transition: transform 0.3s ease;
   }
   

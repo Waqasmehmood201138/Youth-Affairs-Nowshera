@@ -11,7 +11,7 @@ import Img7 from '../Assets/c_9.jpg'
 export default function SliderSection() {
     return (
         <>
-            <div className="container-fluid mt-3">
+            <div className="container-fluid mt-5">
                 <div className="container pt-lg-5   ">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-lg-6 col-md-7 col-11 order-lg-1 order-2">

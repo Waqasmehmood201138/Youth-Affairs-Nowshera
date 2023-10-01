@@ -13,6 +13,8 @@ export default function EventsPage() {
             const allEvents = await axios.get('http://localhost:5000/events/all-events');
 
             setEvents(allEvents.data);
+            console.log(allEvents.data)
+            console.log(allEvents)
         } catch (error) {
             console.error(error);
         }
@@ -23,7 +25,6 @@ export default function EventsPage() {
     }, []);
 
     useEffect(() => {
-        // console.log(events);
 
     }, [events]);
     return (
@@ -33,7 +34,7 @@ export default function EventsPage() {
             <div className="container mt-3 ">
                 <div className="row">
                     <div className="col-12 text-center text-success ">
-                        <h1 className='event_heading'>Our Events</h1>
+                        <h1 className='event_heading fw-bold'>Our Events</h1>
                         <hr className='custom_event_hr' />
                     </div>
                 </div>
@@ -44,9 +45,9 @@ export default function EventsPage() {
                     {events.length === 0 ? (<Loader />) :
                         (events.map((event) => {
                             return (
-                                <div className="col-lg-4 col-12 mb-2" key={event._id}>
+                                <div className="col-lg-4 col-12 mb-5" key={event._id}>
                                     <div class="grid__item">
-                                        <div class="card"><img class="card__img" src={`http://localhost:5000/images/${event.image}`}
+                                        <div class="card "><img class="card__img" src={`http://localhost:5000/images/${event.image}`}
                                             alt="img here..." />
                                             <div class="card__content">
                                                 <h1 class="card__header word-wrap">{event.title.slice(0, 28)}...</h1>
