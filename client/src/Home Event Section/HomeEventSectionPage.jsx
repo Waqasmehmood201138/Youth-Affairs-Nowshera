@@ -1,10 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import img1 from '../Assets/c_9.jpg'
-import img2 from '../Assets/c_7.jpg'
-import img3 from '../Assets/c_2.jpg'
-import img4 from '../Assets/event_1.jpg'
 import '../Home Event Section/HomeEventSectionPage.css'
 
 export default function HomeEventSectionPage() {
@@ -58,8 +54,8 @@ export default function HomeEventSectionPage() {
 
             <div className="container mt-4">
                 <div className="row d-flex justify-content-center " >
-                    <div className="col-lg-3 col-sm-12 text-center">
-                        <button class="card__btn bg-success text-white mb-5 p-2"><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
+                    <div className="col-lg-3 col-10 text-center">
+                        <button class="card__btn bg-success text-white mb-5 p-2 "><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
                     </div>
                 </div>
             </div>
