@@ -1,61 +1,62 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 import img1 from '../Assets/c_9.jpg'
 import img2 from '../Assets/c_7.jpg'
 import img3 from '../Assets/c_2.jpg'
 import '../Home Event Section/HomeEventSectionPage.css'
 
 export default function HomeEventSectionPage() {
+    const [events, setEvents] = useState([])
+    const getAllEvents = async () => {
+        try {
+            const allEvents = await axios.get('http://localhost:5000/events/all-events');
+              const totalevents = allEvents.data.length;
+            setEvents(allEvents.data.slice(totalevents-3,totalevents));
+            console.log(events);
+        
+        } catch (error) {
+            console.error(error);
+        }
+        
+    };
+    useEffect(() => {
+        getAllEvents();
+    }, []);
     return (
         <>
-            <div className="container mt-4 custom_counter_container">
+            <div className="container mt-5 custom_counter_container">
                 <div className="row">
                     <div className="col-12">
-                        <h1 className=' fw-bold text-success text-center'>Latest Events</h1>
+                        <h1 className=' fw-bold text-success text-center mt-5'>Latest Events</h1>
                     </div>
                 </div>
             </div>
 
-            <div className="container mt-3 d-flex justify-content-center align-items center">
+            <div className="container mt-4 d-flex justify-content-center align-items center">
                 <div className="row">
-                    <div className="col-lg-4 col-12 mb-2">
+                {events.map((event)=>{
+                    return(
+                        <div className="col-lg-4 col-12 mb-2">
                         <div class="grid__item__home">
-                            <div class="card__home"><img class="card__img__home" src={img1}
+                            <div class="card__home"><img class="card__img__home" src={`http://localhost:5000/images/${event.image}`}
                                 alt="img here..." />
                                 <div className="overlay">
-                                    <div className="overlay-text"><Link to="/" className='btn btn-success p-2'>See Details</Link></div>
+                                    <div className="overlay-text"><Link to={`/sep/${event._id}`} className='btn btn-success p-2'>See Details</Link></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-12 mb-2">
-                        <div class="grid__item__home">
-                            <div class="card__home"><img class="card__img__home" src={img3}
-                                alt="img here..." />
-                                <div className="overlay">
-                                    <div className="overlay-text"><Link to="/" className='btn btn-success p-2'>See Details</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-12 mb-2">
-                        <div class="grid__item__home">
-                            <div class="card__home"><img class="card__img__home" src={img2}
-                                alt="img here..." />
-                                <div className="overlay">
-                                    <div className="overlay-text"><Link to="/" className='btn btn-success p-2'>See Details</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    )
+                })}
 
                 </div>
             </div>
 
-            <div className="container mt-2">
+            <div className="container mt-4">
                 <div className="row d-flex justify-content-center " >
                     <div className="col-lg-3 col-sm-12 text-center">
-                        <button class="card__btn bg-success text-white"><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
+                        <button class="card__btn bg-success text-white mb-5 p-2"><Link to="/events" style={{ textDecoration: 'none' }} className='text-white'>Explore All Events</Link> <span>&rarr;</span></button>
                     </div>
                 </div>
             </div>

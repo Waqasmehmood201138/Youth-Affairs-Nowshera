@@ -45,9 +45,9 @@ const getAllEventsController  = async (req,res)=>{
 const getSingleEventsController = async(req,res)=>{
         try {
             const eventId = req.params.id;
-               console.log(eventId);
+              
             const event = await Event.findById(eventId);
-            console.log(event)
+            
             if(!event){
                 throw new Error("Event not found!")
             }
