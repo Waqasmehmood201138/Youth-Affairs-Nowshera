@@ -41,7 +41,7 @@ export default function CounterSection() {
                             </>
                         </ScrollTrigger>
 
-                        <h2 className='text-center text-white fw-bold'>Students</h2>
+                        <h2 className='text-center text-white fw-bold'>Ceremony</h2>
                     </div>
                     <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning">
 

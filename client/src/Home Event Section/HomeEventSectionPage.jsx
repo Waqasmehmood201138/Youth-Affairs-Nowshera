@@ -4,6 +4,7 @@ import axios from 'axios'
 import img1 from '../Assets/c_9.jpg'
 import img2 from '../Assets/c_7.jpg'
 import img3 from '../Assets/c_2.jpg'
+import img4 from '../Assets/event_1.jpg'
 import '../Home Event Section/HomeEventSectionPage.css'
 
 export default function HomeEventSectionPage() {
@@ -42,7 +43,9 @@ export default function HomeEventSectionPage() {
                             <div class="card__home"><img class="card__img__home" src={`http://localhost:5000/images/${event.image}`}
                                 alt="img here..." />
                                 <div className="overlay">
+
                                     <div className="overlay-text"><Link to={`/sep/${event._id}`} className='btn btn-success p-2'>See Details</Link></div>
+
                                 </div>
                             </div>
                         </div>

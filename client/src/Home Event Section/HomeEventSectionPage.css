@@ -57,9 +57,10 @@
   }
   
   /* Style for the hover effect */
-  .card__home:hover .card__img__home {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
-  }
+  /* .card__home:hover .card__img__home {
+    Adjust the scale factor as needed
+    transform: scale(1.1); 
+  } */
   
   /* Style for expanding the overlay on hover */
   .card__home:hover::before {
@@ -74,7 +75,9 @@
     left: 0;
     width: 100%;
     height: 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
+     /* Adjust the color and opacity as needed */
+    /* background-color: rgba(255, 255, 255, 0.8);  */
+    background-color: rgba(216, 198, 198, 0.8); /* Adjust the color and opacity as needed */
     z-index: 1;
     transition: height 0.6s ease;
   }
