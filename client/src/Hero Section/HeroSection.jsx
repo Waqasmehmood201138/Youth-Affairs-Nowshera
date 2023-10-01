@@ -10,7 +10,8 @@ import SliderSection from '../Slider Section/SliderSection'
 import CounterSection from '../Counter Section/CounterSection'
 import FooterPage from '../Footer Page/FooterPage'
 import HomeEventSectionPage from '../Home Event Section/HomeEventSectionPage'
-import Loader from '../Loader/Loader'
+import Map from '../Map Section/Map'
+
 
 export default function HeroSection() {
     return (
@@ -45,8 +46,8 @@ export default function HeroSection() {
             <SliderSection />
             <CounterSection />
             <HomeEventSectionPage/>
-            {/* <Loader/> */}
-            <FooterPage/>
+            <Map/>
+            <FooterPage />
 
         </>
     )
