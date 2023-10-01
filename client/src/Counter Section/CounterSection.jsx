@@ -8,22 +8,22 @@ export default function CounterSection() {
     return (
         <>
 
-            <div className="container mt-4 custom_counter_container">
-                <div className="row">
+            <div className="container mt-5 custom_counter_container">
+                <div className="row ">
                     <div className="col-12">
-                        <h1 className=' fw-bold text-success text-center'>Our Achievements</h1>
+                        <h1 className=' fw-bold text-success text-center mt-5'>Our Achievements</h1>
                     </div>
                 </div>
             </div>
 
-            <div className="container-fluid mt-2">
+            <div className="container-fluid mt-4">
                 <div className="row">
                     <div className="col-lg-3 col-12 p-5 bg-success border border-right-warning">
 
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={30} end={512} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={30} end={210} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
@@ -36,7 +36,7 @@ export default function CounterSection() {
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={12} end={112} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={12} end={30} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
@@ -48,7 +48,7 @@ export default function CounterSection() {
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={5} end={124} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={5} end={25} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
@@ -60,7 +60,7 @@ export default function CounterSection() {
                         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                             <>
                                 <h1 className='text-center text-warning fw-bold'>
-                                    {counterOn && <CountUp start={13} end={96} duration={4} delay={0} />}
+                                    {counterOn && <CountUp start={13} end={66} duration={4} delay={0} />}
                                     + </h1>
                             </>
                         </ScrollTrigger>
