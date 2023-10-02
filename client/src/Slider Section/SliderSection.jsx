@@ -16,7 +16,7 @@ export default function SliderSection() {
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-lg-6 col-md-7 col-11 order-lg-1 order-2">
                             <h1 className='text-center text-success fw-bold mt-lg-0 mt-3'>Our Missions!</h1>
-                            <p>
+                            <p style={{ textAlign: 'justify' }}>
                                 Youth Office Nowshera is a beacon of hope and empowerment for the young minds of our community. Our mission is to guide and nurture the aspirations of the youth, equipping them with the skills and knowledge needed to succeed in the journey of life. We believe in unlocking their full potential, fostering resilience, and igniting their passion for a brighter future. Together, we aim to inspire, educate, and empower the youth, ensuring they emerge as confident leaders of tomorrow. At Youth Office Nowshera, we are dedicated to shaping dreams into reality.</p>
                         </div>
                         <div className="col-lg-5 col-11 ms-12 order-lg-2 ">
@@ -44,14 +44,6 @@ export default function SliderSection() {
                                         <img src={Img4} className="d-block w-100 custom_slider_img" alt="..." />
                                     </div>
                                 </div>
-                                {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                </button> */}
                             </div>
                         </div>
                     </div>

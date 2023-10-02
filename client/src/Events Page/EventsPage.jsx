@@ -61,10 +61,10 @@ export default function EventsPage() {
                             )
 
                         }))
-}
+                    }
                 </div>
             </div>
-            
+
             {events.length === 0 ? " " : (<FooterPage />)}
         </>
     )

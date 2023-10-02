@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { useLocation, useNavigate , Link } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 // import { useNavigate } from 'react-router-dom'
 import './style.css'
@@ -26,25 +26,9 @@ const AdminEventForm = () => {
   function handleFileUpload(event) {
     const file = event.target.files[0];
 
-
     setImage(file)
   }
-  // const { id } = useParams();
 
-  // const getAllEvents = async () => {
-  //     try {
-  //         console.log(id)
-  //         const Event = await axios.get(`http://localhost:5000/events/single-event/${id}`);
-
-
-  //     } catch (error) {
-  //         console.error(error);
-  //     }
-  // };
-
-  //  useEffect(()=>{
-  //     getAllEvents()
-  // },[])
 
   const handleSubmit = async (e) => {
     console.log(image)
@@ -75,8 +59,6 @@ const AdminEventForm = () => {
   return (
     <>
 
-      {/* <Navbar /> */}
-
       <div className="container-fluid bg-light">
         <div className="row custom-hight  d-flex justify-content-center align-content-center">
           <div className="col-lg-8 col-11 mb-lg-0 mb-5 bg-white text-center p-5 shadow">
@@ -95,7 +77,7 @@ const AdminEventForm = () => {
               {/* <input type="file"  name='image' accept=".png, .jpg, .jpeg" className='custom-input mt-5'   onChange={handleFileUpload}/> */}
               <div className='d-inline-block'>
                 <button className=' button p-1 bg-custom text-white mt-5 rounded-5  px-3 p-2' type='submit'>Update Event</button>
-                <Link to="/admin-dashboard" className ="btn btn-danger ms-1 rounded-5">Cancel</Link>
+                <Link to="/admin-dashboard" className="btn btn-danger ms-1 rounded-5">Cancel</Link>
               </div>
             </form>
           </div>

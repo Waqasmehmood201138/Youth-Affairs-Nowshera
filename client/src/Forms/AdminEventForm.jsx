@@ -73,8 +73,8 @@ const AdminEventForm = () => {
               </select>
               <input type="file" placeholder='Enter Description' name='image' accept=".png, .jpg, .jpeg" className='custom-input mt-3 p-1' onChange={handleFileUpload} />
               <div className='d-inline-block'>
-                <button className=' button p-1 bg-custom text-white mt-5 rounded-5  px-5 p-2' type='submit'>Add Event</button>
-                <Link to="/admin-dashboard" className=' button btn btn-danger ms-1  text-white rounded-5  px-5 p-2' style={{textDecoration: 'none'}}>Back</Link>
+                <button className=' button p-1 bg-custom text-white mt-5 rounded-5  px-5 p-2 mb-2' type='submit'>Add Event</button>
+                <Link to="/admin-dashboard" className=' button btn btn-danger ms-1  text-white rounded-5  px-5 p-2' style={{ textDecoration: 'none' }}>Back</Link>
               </div>
             </form>
           </div>

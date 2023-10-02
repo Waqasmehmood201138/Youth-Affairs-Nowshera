@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import './Navbar.css'
 import logo from '../Assets/logo_2.png'
 
 export default function Navbar() {
+
     return (
         <>
             <nav className="navbar navbar-expand-lg custom_bg mobile_view" data-bs-theme="dark">
@@ -26,10 +26,6 @@ export default function Navbar() {
                             </li>
 
                         </ul>
-                        {/* <div className='ms-auto d-md-flex'>
-                            <Link to="/login"><button className='btn btn-dark fw-bold custom_login'>Login</button></Link>
-                            <Link to="/signup"><button className='btn btn-dark fw-bold ms-3 custom_signup' style={{ backgroundColor: "#00401A" }}>Signup</button></Link>
-                        </div> */}
                     </div>
                 </div>
             </nav>

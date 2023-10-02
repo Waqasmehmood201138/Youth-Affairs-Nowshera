@@ -1,25 +1,9 @@
 
-/* .custom_bg{
-    background-color: #00401A;
-}
-.custom_nav{
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
+.active{
     color: white;
+    background-color: white;
+    color: black;
 }
-.custom_nav:hover{
-    color: #ffcc00;
-}
-.custom_login:hover{
-background-color: #00401A;
-}
-.test:hover{
-    background-color: #ffcc00;
-} */
-
-/* 666666666666666 */
 .custom_bg{
     background-color: #00401A;
    
@@ -37,7 +21,6 @@ background-color: #00401A;
     padding: 10px;
 }
 .custom_nav:hover{
-    color: white;
     background-color: white;
     color: black;
     transition: 0.3s ease-in-out;
