@@ -48,7 +48,7 @@ const LoginForm = () => {
     <div className="container-fluid bg-light">
         <div className="row  custom-hight  d-flex justify-content-center align-content-center">
             <div className="col-lg-3 col-md-5 col-11  bg-white text-center p-5 shadow">
-                  <h4 className='fw-bold'>Sign-In</h4>
+                  <h4 className='fw-bold'>Sign-Up</h4>
                 
                 <form action="" className='d-flex flex-column '  onSubmit={handleSubmit}>
                     <input type="text" placeholder='Name' name='name' className='custom-input mt-5' onChange={((e)=>setName(e.target.value))}/>

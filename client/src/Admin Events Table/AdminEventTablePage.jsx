@@ -61,7 +61,7 @@ export default function AdminEventTablePage() {
             <div className="container mt-4 " style={{ fontFamily: 'Poppins' }}>
                 <div className="row">
                     <div className="col-12 d-flex justify-content-between">
-                        <h2 className='text-success'>Admin Panel | Events</h2>
+                        <h2 className='text-success fw-bold'>Admin Panel | Events</h2>
                         <Link to="/add-event" className='btn btn-success mb-2'>Add New Events  </Link>
                     </div>
                     <hr />
@@ -77,7 +77,7 @@ export default function AdminEventTablePage() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {(title.length == 0) ?
+                                {(title.length === 0) ?
 
                                     <td colSpan={5}><Loader /></td>
                                     : (

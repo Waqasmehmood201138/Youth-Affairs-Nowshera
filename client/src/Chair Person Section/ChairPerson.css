@@ -1,0 +1,26 @@
+.chair_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.chair_name {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chair_aim {
+    font-family: 'Poppins';
+
+}
+
+@media(max-width: 767px) {
+    .chair_img {
+        margin-top: 12px;
+    }
+    .chair_col{
+       display: none;
+    }
+}

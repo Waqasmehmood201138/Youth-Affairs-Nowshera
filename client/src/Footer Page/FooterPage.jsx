@@ -9,7 +9,7 @@ import '../Footer Page/FooterPage.css'
 export default function FooterPage() {
     return (
         <>
-            <div className="container-fluid bg-dark p-2 custom_footer mt-2">
+            <div className="container-fluid bg-dark p-2 custom_footer">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">

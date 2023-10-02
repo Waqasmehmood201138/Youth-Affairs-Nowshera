@@ -13,14 +13,17 @@
     background-color: #fff;
     border-radius: 0.4rem;
     overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+    box-shadow: -1px -4px 5px 0px rgba(204,164,164,0.75);
+    -webkit-box-shadow: -1px -4px 5px 0px rgba(204,164,164,0.75);
+    -moz-box-shadow: -1px -4px 5px 0px rgba(204,164,164,0.75);
     cursor: pointer;
     transition: 0.2s;
   }
- /* .grid__item__home:hover {
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
-  } */
+ .grid__item__home:hover {
+    /* transform: translateY(-0.5%); */
+    box-shadow: none;
+  }
   .card__img__home{
     display: block;
     width: 100%;

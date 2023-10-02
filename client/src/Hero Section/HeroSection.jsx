@@ -11,6 +11,7 @@ import CounterSection from '../Counter Section/CounterSection'
 import FooterPage from '../Footer Page/FooterPage'
 import HomeEventSectionPage from '../Home Event Section/HomeEventSectionPage'
 import Map from '../Map Section/Map'
+import ChairPerson from '../Chair Person Section/ChairPerson'
 
 
 export default function HeroSection() {
@@ -44,6 +45,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <SliderSection />
+            <ChairPerson/>
             <CounterSection />
             <HomeEventSectionPage/>
             <Map/>
