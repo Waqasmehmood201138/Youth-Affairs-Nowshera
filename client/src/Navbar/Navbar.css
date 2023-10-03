@@ -53,5 +53,7 @@
     }
     .desktop_view{
         display: block;
+        transition: 1s ease-in;
     }
+
 }

@@ -1,9 +1,30 @@
-import React from 'react'
+import {React , useState , useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../Assets/logo_2.png'
+// import { useState } from 'react'
 
 export default function Navbar() {
+    const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    // Function to handle scroll events
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
     return (
         <>
@@ -30,7 +51,7 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            <div className="container-fluid custom_bg desktop_view">
+            <div className={`container-fluid custom_bg desktop_view ${isFixed ? 'fixed-top' : ''}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-1"><Link className='d-flex justify-content-center align-items-center'><img className='mt-1' src={logo} width="40" height="40" alt="" style={{ borderRadius: "50%" }} /></Link></div>
