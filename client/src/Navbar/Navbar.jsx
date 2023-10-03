@@ -58,6 +58,7 @@ export default function Navbar() {
 
                         <div className="col-1 custom_nav home_nav"><Link to="/" className='nav-link'>Home</Link></div>
                         <div className="col-1 custom_nav"><Link to="/events" className='nav-link'>Events</Link></div>
+                        <div className="col-1 custom_nav"><Link to="/gallery" className='nav-link'>Gallery</Link></div>
                         <div className="col-2 custom_nav"><Link to="/contact-us" className='nav-link'>Contact Us</Link></div>
 
                         <div className="col-1 custom_nav buttons"><Link to="/login" className='nav-link custom_button'>Login</Link></div>

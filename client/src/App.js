@@ -15,6 +15,7 @@ import AdminEventForm from './Forms/AdminEventForm';
 import EventSpecificPage from './Event Specific Page/EventSpecificPage';
 import AdminEventTablePage from './Admin Events Table/AdminEventTablePage';
 import ContactUsPage from './Contact Us Page/ContactUsPage';
+import GalleryPage from './Gallery Page/GalleryPage';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path='/test' element={<EditForm />} />
 
           <Route path='/contact-us' element={<ContactUsPage />} />
+          <Route path='/gallery' element={<GalleryPage />} />
 
 
 
