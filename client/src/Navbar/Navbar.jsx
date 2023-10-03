@@ -1,13 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../Assets/logo_2.png'
 
 export default function Navbar() {
+    const [scrollClass,setScrollClass] = useState('custom_bg')
+    window.addEventListener('scroll',()=>{
+        if(window.scrollY>300){
+              setScrollClass(' bg-dark custom_bg opacity-75 nav-transition')
+        }
+        else{
+            setScrollClass("custom_bg")
+        }
+    })
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg custom_bg mobile_view" data-bs-theme="dark">
+            <nav className="navbar navbar-expand-lg  custom_bg mobile_view" data-bs-theme="dark">
                 <div className="container">
                     <Link className="navbar-brand" to="/"><img src={logo} width="40" height="40" alt="logo" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +39,7 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            <div className="container-fluid custom_bg desktop_view">
+            <div className={`container-fluid fixed-top ${scrollClass} desktop_view`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-1"><Link className='d-flex justify-content-center align-items-center'><img className='mt-1' src={logo} width="40" height="40" alt="" style={{ borderRadius: "50%" }} /></Link></div>

@@ -5,9 +5,12 @@
     color: black;
 }
 .custom_bg{
-    background-color: #00401A;
-   
+    background-color: #00401A;  
 }
+.nav-transition{
+    transition: all 0.6s ease;
+  }
+
 .custom_nav{
     font-family: poppins;
     display: flex;
