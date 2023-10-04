@@ -17,10 +17,10 @@ export default function FooterPage() {
                         </div>
                         <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">
                             <h5 className='text-white ms-3'>
-                                <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-white icon'><BsFacebook className='icon'/></Link></span>
-                                <span className='me-4 icon'><RiTwitterXFill /></span>
-                                <span className='me-4 icon'><BsInstagram /></span>
-                                <span className='icon'><BsYoutube /></span>
+                                <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-white icon_footer'><BsFacebook className='icon_footer'/></Link></span>
+                                <span className='me-4 icon_footer'><RiTwitterXFill /></span>
+                                <span className='me-4 icon_footer'><BsInstagram /></span>
+                                <span className='icon_footer'><BsYoutube /></span>
                             </h5>
                         </div>
                     </div>

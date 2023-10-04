@@ -52,7 +52,7 @@ export default function EventsPage() {
                                             alt="img here..." />
                                             <div class="card__content">
                                                 <h1 class="card__header word-wrap">{event.title.slice(0, 28)}...</h1>
-                                                <p class="card__text ">{event.description.slice(0, 80)}...</p>
+                                                <p class="card__text ">{event.description.slice(0, 80)}...</p><span className='badge text-bg-success mb-2'>{event.categories}</span>
 
                                                 <button class="card__btn"><Link to={`/sep/${event._id}`} style={{ textDecoration: 'none' }}>Explore</Link> <span>&rarr;</span></button>
                                             </div>

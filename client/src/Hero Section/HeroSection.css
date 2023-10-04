@@ -1,5 +1,6 @@
 .hero_bg{
-    background-color: #045517;
+    /* background-color: #045517; */
+    background-color: #9eb4cb;
     height: 400px;
 }
 .hero_img{
@@ -7,10 +8,11 @@
     width: 540px;
 }
 .custom_hero_title{
-    font-size:36px;
+    font-size:42px;
     font-weight: 700;
     font-style: normal;
 }
+
 .icon:hover{
     color: yellow;
 }
