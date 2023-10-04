@@ -34,7 +34,8 @@ export default function EventSpecificPage() {
                         <img className='border border-success border-3 rounded custom_sep_img' src={`http://localhost:5000/images/${event.image}`} width="550" alt="" />
                     </div>
                     <div className="col-lg-6 col-12 custom_sep_details">
-                        <p className=''><FaCalendarAlt/><span className='ms-2'>{event.time}</span></p>
+                        <p className=''><FaCalendarAlt/><span className='ms-2'>{event.time}</span> <span className='badge text-bg-success mt-2 ms-3'>{event.categories}</span></p>
+                        
                         <h2 className='border-start border-success border-4 p-2 custom_sep_head'>{event.title}</h2>
                         <p className='custom_sep_desc'>{event.description}</p>
                     </div>

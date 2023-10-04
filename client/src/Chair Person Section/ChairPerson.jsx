@@ -26,7 +26,7 @@ export default function ChairPerson() {
                     <div className="col-lg-4 col-sm-12  d-flex justify-content-center align-items-center flex-column border-start border-end border-success border-3 chair_col">
                         <img className='chair_img ' src={chairImg2} alt="" />
                         <h3 className='chair_name p-3'>Elon Musk</h3>
-                        <p className='text-center chair_aim'>We're dedicated to nurturing leadership skills and personal growth among young people.</p>
+                        <p className='text-center chair_aim'>We're dedicated to nurturing leadership skills and personal growth</p>
                     </div>
                     <div className="col-lg-4 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                         <img className='chair_img' src={chairImg3} alt="" />

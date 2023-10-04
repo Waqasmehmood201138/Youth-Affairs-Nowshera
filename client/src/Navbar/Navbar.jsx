@@ -43,6 +43,9 @@ export default function Navbar() {
                                 <Link class="nav-link ps-4 pe-4 custom_nav" aria-current="page" to="/events">Events</Link>
                             </li>
                             <li class="nav-item">
+                                <Link class="nav-link ps-4 pe-4 custom_nav" aria-current="page" to="/gallery">Gallery</Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link class="nav-link custom_nav" aria-current="page" to="/contact-us">Contact Us</Link>
                             </li>
 
