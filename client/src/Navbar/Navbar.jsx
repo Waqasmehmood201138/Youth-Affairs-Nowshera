@@ -43,6 +43,9 @@ export default function Navbar() {
                                 <Link class="nav-link ps-4 pe-4 custom_nav" aria-current="page" to="/events">Events</Link>
                             </li>
                             <li class="nav-item">
+                                <Link class="nav-link ps-4 pe-4 custom_nav" aria-current="page" to="/gallery">Gallery</Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link class="nav-link custom_nav" aria-current="page" to="/contact-us">Contact Us</Link>
                             </li>
 
@@ -58,6 +61,7 @@ export default function Navbar() {
 
                         <div className="col-1 custom_nav home_nav"><Link to="/" className='nav-link'>Home</Link></div>
                         <div className="col-1 custom_nav"><Link to="/events" className='nav-link'>Events</Link></div>
+                        <div className="col-1 custom_nav"><Link to="/gallery" className='nav-link'>Gallery</Link></div>
                         <div className="col-2 custom_nav"><Link to="/contact-us" className='nav-link'>Contact Us</Link></div>
 
                         <div className="col-1 custom_nav buttons"><Link to="/login" className='nav-link custom_button'>Login</Link></div>

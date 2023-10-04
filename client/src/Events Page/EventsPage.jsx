@@ -35,7 +35,8 @@ export default function EventsPage() {
                 <div className="row">
                     <div className="col-12 text-center text-success ">
                         <h1 className='event_heading fw-bold'>Our Events</h1>
-                        <hr className='custom_event_hr' />
+                        {/* <hr className='custom_event_hr ' /> */}
+                        <div className='smooth-line'></div>
                     </div>
                 </div>
 
