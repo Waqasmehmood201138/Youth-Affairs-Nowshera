@@ -48,7 +48,7 @@ const AdminEventForm = () => {
       if (response.status === 200) {
         console.log(response);
         toast.success('Event Added-successfully');
-        navigate('/')
+        navigate('/admin-dashboard')
       }
     } catch (error) {
       console.log(error);
