@@ -23,9 +23,9 @@ export default function HeroSection() {
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center">
                         <div className="col-lg-5 col-sm-12">
-                            <h1 className='text-success fw-bold custom_hero_title'>District Youth Affairs Nowshera.</h1>
-                            <p className=" text-light mt-3 fw-bold">
-                                Our Youth <span className='text-success'>|</span> Our Pride <span className='text-success'>|</span> Our Future
+                            <h1 className=' fw-bold custom_hero_title'>District Youth Affairs Nowshera.</h1>
+                            <p className="custom_hero_subtitle mt-3 fw-bold">
+                                Our Youth <span className='text-dark'>|</span> Our Pride <span className='text-dark'>|</span> Our Future
                             </p>
                             <h3 className='text-white ms-3'>
                                 <span className='me-4'><Link to='https://www.facebook.com/YouthNowshera' target='_blank' className='text-primary'><BsFacebook className='icon' /></Link></span>
