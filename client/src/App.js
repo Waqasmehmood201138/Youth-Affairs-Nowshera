@@ -1,7 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import HeroSection from './Hero Section/HeroSection';
 import LoginForm from './Forms/LoginForm';
 import SignupForm from './Forms/SignupForm';
@@ -21,11 +22,11 @@ import GalleryPage from './Gallery Page/GalleryPage';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <ToastContainer />
         <Routes>
 
-          <Route path='/' element={<HeroSection />} />
+          <Route exact path='/' element={<HeroSection />} />
           <Route path='/login' element={<LoginForm />} />
           <Route path='/signup' element={<SignupForm />} />
 
@@ -44,7 +45,7 @@ function App() {
 
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
