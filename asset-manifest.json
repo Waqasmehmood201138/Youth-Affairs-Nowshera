@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Youth-Affairs-Nowshera/static/css/main.ae2d2899.css",
-    "main.js": "/Youth-Affairs-Nowshera/static/js/main.5c1d9562.js",
+    "main.js": "/Youth-Affairs-Nowshera/static/js/main.afd0544e.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Youth-Affairs-Nowshera/static/js/787.c4e7f8f9.chunk.js",
     "static/media/yonvideo.mp4": "/Youth-Affairs-Nowshera/static/media/yonvideo.20ec6f9af524023a5bc4.mp4",
     "static/media/c_7.jpg": "/Youth-Affairs-Nowshera/static/media/c_7.a019afbaa935545e286c.jpg",
@@ -14,11 +14,11 @@
     "static/media/c_5.jpg": "/Youth-Affairs-Nowshera/static/media/c_5.afe5f875b413fec5e022.jpg",
     "index.html": "/Youth-Affairs-Nowshera/index.html",
     "main.ae2d2899.css.map": "/Youth-Affairs-Nowshera/static/css/main.ae2d2899.css.map",
-    "main.5c1d9562.js.map": "/Youth-Affairs-Nowshera/static/js/main.5c1d9562.js.map",
+    "main.afd0544e.js.map": "/Youth-Affairs-Nowshera/static/js/main.afd0544e.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Youth-Affairs-Nowshera/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae2d2899.css",
-    "static/js/main.5c1d9562.js"
+    "static/js/main.afd0544e.js"
   ]
 }
