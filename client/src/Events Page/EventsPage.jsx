@@ -48,7 +48,7 @@ export default function EventsPage() {
                             return (
                                 <div className="col-lg-4 col-12 mb-5" key={event._id}>
                                     <div class="grid__item">
-                                        <div class="card "><img class="card__img" src={`http://localhost:5000/images/${event.image}`}
+                                        <div class="card "><img class="card__img" src={`https://youth-affairs-nowshera-backend-production.up.railway.app/images/${event.image}`}
                                             alt="img here..." />
                                             <div class="card__content">
                                                 <h1 class="card__header word-wrap">{event.title.slice(0, 28)}...</h1>
