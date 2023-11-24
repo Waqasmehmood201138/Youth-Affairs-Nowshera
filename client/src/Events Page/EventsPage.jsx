@@ -10,7 +10,7 @@ export default function EventsPage() {
     const [events, setEvents] = useState([])
     const getAllEvents = async () => {
         try {
-            const allEvents = await axios.get('http://localhost:5000/events/all-events');
+            const allEvents = await axios.get('https://youth-affairs-nowshera-backend-production.up.railway.app/events/all-events');
 
             setEvents(allEvents.data);
             console.log(allEvents.data)
