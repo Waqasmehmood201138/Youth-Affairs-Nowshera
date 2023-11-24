@@ -38,6 +38,7 @@ function App() {
           <Route path='/test' element={<EditForm />} />
 
           <Route path='/contact-us' element={<ContactUsPage />} />
+          
           <Route path='/gallery' element={<GalleryPage />} />
 
 
