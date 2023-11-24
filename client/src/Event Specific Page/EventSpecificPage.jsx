@@ -12,7 +12,7 @@ export default function EventSpecificPage() {
     const getAllEvents = async () => {
         try {
             console.log(id)
-            const Event = await axios.get(`http://localhost:5000/events/single-event/${id}`);
+            const Event = await axios.get(`https://youth-affairs-nowshera-backend-production.up.railway.app/events/single-event/${id}`);
              console.log(event)
             setEvent(Event.data);
         } catch (error) {
@@ -31,7 +31,7 @@ export default function EventSpecificPage() {
             <div className="container pt-4">
                 <div className="row mt-4">
                     <div className="col-lg-6 col-12 custom_sep_img_div">
-                        <img className='border border-success border-3 rounded custom_sep_img' src={`http://localhost:5000/images/${event.image}`} width="550" alt="" />
+                        <img className='border border-success border-3 rounded custom_sep_img' src={`https://youth-affairs-nowshera-backend-production.up.railway.app/images/${event.image}`} width="550" alt="" />
                     </div>
                     <div className="col-lg-6 col-12 custom_sep_details">
                         <p className=''><FaCalendarAlt/><span className='ms-2'>{event.time}</span> <span className='badge text-bg-success mt-2 ms-3'>{event.categories}</span></p>

@@ -7,7 +7,7 @@ export default function HomeEventSectionPage() {
     const [events, setEvents] = useState([])
     const getAllEvents = async () => {
         try {
-            const allEvents = await axios.get('http://localhost:5000/events/all-events');
+            const allEvents = await axios.get('https://youth-affairs-nowshera-backend-production.up.railway.app/events/all-events');
               const totalevents = allEvents.data.length;
             setEvents(allEvents.data.slice(totalevents-3,totalevents));
             console.log(events);
@@ -36,7 +36,7 @@ export default function HomeEventSectionPage() {
                     return(
                         <div className="col-lg-4 col-12 mb-2">
                         <div class="grid__item__home">
-                            <div class="card__home"><img class="card__img__home" src={`http://localhost:5000/images/${event.image}`}
+                            <div class="card__home"><img class="card__img__home" src={`https://youth-affairs-nowshera-backend-production.up.railway.app/images/${event.image}`}
                                 alt="img here..." />
                                 <div className="overlay">
 
