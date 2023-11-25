@@ -50,7 +50,7 @@ const GalleryPage = () => {
               {category.map((e, index) => {
                 return (
                   <div key={index} className=''>
-                    <img src={e} className='img-fluid image' alt="img here..." />
+                    <img src={`${process.env.PUBLIC_URL}/${e}`} className='img-fluid image' alt="img here..." />
 
                   </div>
                 )
